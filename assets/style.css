@@ -1,31 +1,107 @@
-/* File: assets/style.css */
-
+/* style.css */
+/* Main layout styles */
 body {
-    font-family: "Segoe UI", sans-serif;
-    background-color: #f8f9fa;
-    margin: 40px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
 }
 
-h1 {
-    color: #2e6da4;
-    margin-bottom: 10px;
-}
-
-.menu {
-    display: flex;
-    gap: 40px;
+/* Header styles */
+.dash-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
     margin-bottom: 20px;
+}
+
+.dash-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.dash-header p {
+    margin: 5px 0 0 0;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+/* Menu bar styles */
+.dash-menu {
+    background-color: #34495e;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .menu-title {
     font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 14px;
 }
 
-.dropdown {
+/* Dropdown styles */
+.Select-control {
+   background-color: #FFFFFF !important;
+    color: white !important;
     width: 200px;
 }
+/* menu style */
+.Select-control {
+    background-color: #FFFFFF !important;
+    color: white !important;
+}
 
-.chart {
-    padding-top: 20px;
+.Select-menu-outer {
+    background-color: #34495e !important;
+    color: white !important;
+}
+
+.Select-option {
+    color: white !important; 
+}
+
+.Select-option {
+    padding: 12px 20px !important;
+    line-height: 1.5 !important;
+}
+
+.Select-input {
+    padding: 8px !important;
+}
+
+.Select-option.is-focused {
+    background-color: white !important;
+}
+
+/* Date picker styles */
+.DateInput {
+    background: white;
+    border-radius: 4px;
+}
+
+/* Content area styles */
+.dash-content {
+    padding: 20px;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
